@@ -3,7 +3,7 @@ version: 0.1
 phase:
   build:
       - echo Nothing to do yet
-artificats:
+artifacts:
   files:
     - License.pdf
     - css/*
