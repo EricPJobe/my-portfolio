@@ -1,0 +1,16 @@
+version: 0.1
+
+phase:
+  build:
+      - echo Nothing to do yet
+artificats:
+  files:
+    - License.pdf
+    - css/*
+    - font/*
+    - images/*
+    - img/*
+    - js/*
+    - mdb-addons/*
+    - sass/*
+    - index.html
