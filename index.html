@@ -1,145 +1,486 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Eric P. Jobe, Ph.D.</title>
-    <link rel="stylesheet" href="styles/main.css"/>
+<html lang="en" class="full-height">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<title>Eric Jobe's Professional Profile</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo"/>
-  </head>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <body>
-    <main class="overflow--auto">
-      <h1 class="color--skyBlue section__heading--largest">
-        <!--Your name goes here -->
-        CLOUD GURU
-      </h1>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
-      <ul class="section--social">
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
 
-        <!--Links to relevant professional social media & resume -->
-        <!-- See: http://fontawesome.io/icons/#brand for more -->
+	<!-- Your custom styles (optional) -->
+	<link href="css/style.css" rel="stylesheet">
 
-        <!-- Link to Linked In profile -->
-        <li class="socialWrapper">
-          <a class="color--skyBlue social"
-             title="LinkedIn Profile"
-             target="_blank"
-             href="#">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
+    <style>
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 700px;
+            }
+        }
+    </style>
 
-        <!-- Link to GitHub profile -->
-        <li class="socialWrapper color--skyBlue">
-          <a class="social color--skyBlue"
-             title="GitHub Profile"
-             target="_blank"
-             href="#">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
+</head>
+<body class="developer">
 
-        <!-- Link to resume, probably a .pdf -->
-        <li class="socialWrapper">
-          <a class="social color--skyBlue"
-             title="Resume"
-             href="#">
-            <i class="fa fa-file-text"></i>
-          </a>
-        </li>
-      </ul>
+    <!--Navigation & Intro-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">EPJ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-offset="100">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-offset="100">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works" data-offset="100">Works</a>
+                        </li>
+												<li class="nav-item">
+                            <a class="nav-link" href="#resume" data-offset="100">Résumé</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-offset="100">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://stackoverflow.com/users/7502768/eric-jobe"><i class="fa fa-stack-overflow light-green-text-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/ilimilku"><i class="fa fa-github light-green-text-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/eric-jobe-8182b946/"><i class="fa fa-linkedin light-green-text-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Intro Section -->
+        <div id="home" class="view hm-white-strong jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('images/hero.jpeg');">
+            <div class="full-bg-img">
+                <div class="container flex-center">
+                    <div class="row smooth-scroll">
+                        <div class="col-md-12 pt-3">
+                            <div class="white-text text-center pt-5">
+                                <h1 class="display-2 mb-4 dark-grey-text wow fadeIn">I am <strong>Eric P. Jobe, Ph.D.</strong></h1>
+                                <h5 class="font-up font-bold wow fadeIn" data-wow-delay="0.4s"><mark>Software Engineering & Semitic Philology</mark></h5>
+                                <a href="#about" class="btn btn-floating btn-large wow fadeIn" data-wow-delay="0.4s" data-offset="100"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--/Navigation & Intro-->
+
+    <!--Main layout-->
+    <main>
+
+        <!-- First container -->
+        <div class="container">
+
+            <!-- Section About -->
+            <section id="about" class="section feature-box mb-5">
+
+                <!-- Section title -->
+                <h2 class="text-center font-up my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">About <strong>me</strong></h2>
+
+                <p class="section-description wow fadeIn" data-wow-delay="0.2s">After earning my Ph.D. in Semitic philology from the University of Chicago in 2015, I began to transition to the field of software engineering, where I am currently developing a wide range of skills.</p>
+
+                <!-- First row -->
+                <div class="row features-big wow fadeIn" data-wow-delay="0.4s">
+
+                    <!-- First column -->
+                    <div class="col-md-3 mb-r">
+
+                        <!--Panel-->
+                        <div class="card card-body hoverable">
+                            <i class="fa fa-code dark-grey-text" aria-hidden="true"></i>
+                            <h5 class="feature-title font-up">Computer Science</h5>
+                            <p class="dark-grey-text">C/C++ background, AWS + web frameworks, computational linguistics</p>
+                        </div>
+                        <!--/.Panel-->
+
+                    </div>
+                    <!-- /First column -->
+										<div class="col-md-3 mb-r">
+
+                        <!--Panel-->
+                        <div class="card card-body hoverable">
+                            <i class="fa fa-pencil dark-grey-text" aria-hidden="true"></i>
+                            <h5 class="feature-title font-up">Technical Writing</h5>
+                            <p class="dark-grey-text">Documentation, development of training materials, instruction</p>
+                        </div>
+                        <!--/.Panel-->
+
+                    </div>
+                    <!-- Third column -->
+                    <div class="col-md-3 mb-r">
+
+                        <!--Panel-->
+                        <div class="card card-body hoverable">
+                            <i class="fa fa-language dark-grey-text" aria-hidden="true"></i>
+                            <h5 class="feature-title font-up">Philology</h5>
+                            <p class="dark-grey-text">Languages and literature of the Ancient Near East and Mediterranean</p>
+                        </div>
+                        <!--/.Panel-->
+
+                    </div>
+                    <!-- /.Third column -->
+
+                    <!-- Fourth column -->
+                    <div class="col-md-3 mb-r">
+
+                        <!--Panel-->
+                        <div class="card card-body hoverable">
+                            <i class="fa fa-coffee dark-grey-text" aria-hidden="true"></i>
+                            <h5 class="feature-title font-up">Philosophy</h5>
+                            <p class="dark-grey-text">Religious epistemology, structuralism, semiotics, philosophy of language</p>
+                        </div>
+                        <!--/.Panel-->
+
+                    </div>
+                    <!-- /.Fourth column -->
+
+                </div>
+                <!-- /.First row -->
+
+            </section>
+            <!-- /.Second section -->
+
+        </div>
+        <!-- /.First container -->
+
+
+         <!--Second container-->
+            <div class="container-fluid" style="background-color: #f3f3f5;">
+                <div class="container py-4 pt-4">
+
+            <!-- Second section -->
+            <section id="skills">
+
+                <!-- First row -->
+                <div class="row py-5">
+
+                    <!--First column-->
+                    <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
+
+                    <!--Section heading-->
+                    <div class="d-flex justify-content-start">
+                        <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">My <strong>experience</strong></h4>
+                    </div>
+
+                            <!--Description-->
+                            <blockquote class="blockquote bq-warning mb-4">
+                                <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                    <h5 class="font-bold mb-3">Freelance developer</h5>
+                                </div>
+                                <p class="font-bold ml-1 dark-grey-text mb-2">May 2017 - Present (in progress)</p>
+                                <p class="mb-0 ml-1 light-grey-text">Redesign of Sweetwater Mortgage landing page, mortgage application tools, admin web app</p>
+                            </blockquote>
+
+                            <blockquote class="blockquote bq-warning mt-1 mb-4">
+                                <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                    <h5 class="font-bold mb-3">Faculty Instructor - St. Macrina Orthodox Institute</h5></div>
+                                <p class="font-bold ml-1 dark-grey-text mb-2">October 2012 - April 2017 </p>
+                                <p class="mb-0 ml-1 light-grey-text">Old Testament and New Testament surveys, Into to Biblical Greek</p>
+                            </blockquote>
+
+                            <blockquote class="blockquote bq-warning">
+                                <div class="row"> <i class="fa fa-briefcase fa-x mb-1 mr-3 ml-3 dark-grey-text" aria-hidden="true"></i>
+                                    <h5 class="font-bold mb-3">Adjunct Instructor - The University of Chicago</h5> </div>
+                                <p class="font-bold ml-1 dark-grey-text mb-2"><strong>Fall 2012 - Winter 2013</strong></p>
+                                <p class="mb-0 ml-1 light-grey-text">Guided undergraduate students through composition of B.A. thesis</p>
+                            </blockquote>
+
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-lg-5 offset-lg-1 col-md-12 mb-4 wow fadeIn" data-wow-delay="0.4s">
+
+                    <!--Second heading-->
+                    <div class="d-flex justify-content-start">
+                        <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Development <strong>Skills</strong></h4>
+                    </div>
+
+                        <!--Description-->
+                        <p class="black-text font-up font-bold" align="justify">HTML5/CSS3/Java Script</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        <p class="black-text font-up font-bold pt-3" align="justify">C/C++</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        <p class="black-text font-up font-bold pt-3" align="justify">Angular 4/Typescript</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        <p class="black-text font-up font-bold pt-3" align="justify">AWS Solutions Architect Associate Certification</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        <p class="black-text font-up font-bold pt-3" align="justify">Python</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                    </div>
+                    <!--/Second column-->
+
+                </div>
+                <!--/First row-->
+
+            </section>
+            <!-- /.Second section -->
+
+          </div>
+
+        </div>
+    <!--/Second container-->
+
+
+    <!-- Third container -->
+        <div class="container">
+
+            <!-- Section About -->
+            <section class="section feature-box my-5 pb-5">
+
+                <!-- Section title -->
+                <h2 class="text-center font-up my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">Development <strong>Methodology</strong></h2>
+                <p class="section-description wow fadeIn" data-wow-delay="0.2s"></p>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified blue" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">01. Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">02. Adapt/Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">03. Development</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content card">
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                            <br>
+                            <div class="row mt-2">
+                                <div class="col-2"> <i class="fa fa-search fa-3x mb-1 grey-text" aria-hidden="true"></i> </div>
+                                <div class="col-9 mb-2">
+                                    <p class="dark-grey-text">I begin each project with a comprehensive review of existing methodologies and tools with a view to their strengths and weaknesses. I believe breadth of knowledge enables efficient diagnosis of the right solution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Panel 1-->
+
+                        <!--Panel 2-->
+                        <div class="tab-pane fade" id="panel2" role="tabpanel">
+                            <br>
+                            <div class="row mt-2">
+                                <div class="col-2"> <i class="fa fa-pencil fa-3x mb-1 grey-text" aria-hidden="true"></i> </div>
+                                <div class="col-9 mb-2">
+                                    <p class="dark-grey-text">With a broad knowledge base I can adapt an existing solution or create a new approach that is efficient and precise. Careful interaction with users allows developers to target the appropriate level of abstraction for UI and controls.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Panel 2-->
+
+                        <!--Panel 3-->
+                        <div class="tab-pane fade" id="panel3" role="tabpanel">
+                            <br>
+                            <div class="row mt-2">
+                                <div class="col-2"> <i class="fa fa-code fa-3x mb-1 grey-text" aria-hidden="true"></i> </div>
+                                <div class="col-9 mb-2">
+                                    <p class="dark-grey-text">I aim to use the right language(s), tools, libraries, and platforms for each task without prejudice. Only a broad knowledge base and ability to adapt can enable such flexibility.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Panel 3-->
+                    </div>
+                <!-- /.Tab panels -->
+            </section>
+            <!-- /.Section -->
+        </div>
+        <!-- /.Third container -->
+
+        <!-- Streak -->
+        <div class="streak streak-photo streak-md hm-indigo-strong" style="background-image:url('images/mss.jpg')">
+            <div class="mask pattern-1 flex-center">
+                <div class="white-text smooth-scroll">
+                    <h2 class="h2-responsive wow fadeIn mb-5"><i class="fa fa-quote-left" aria-hidden="true"></i> πολυμαθίη νόον οὐ διδάσκει. Much learning does not teach understanding.<i class="fa fa-quote-right" aria-hidden="true"></i></h2>
+                    <h5 class="text-center font-italic wow fadeIn" data-wow-delay="0.2s">~ Heraclitus, Fragment 40</h5>
+                </div>
+            </div>
+        </div>
+        <!-- /.Streak -->
+
+
+        <!-- Fourth container -->
+        <div class="container">
+
+            <!-- Fourth section -->
+            <section id="works" class="section mb-5">
+
+                <!-- Section title -->
+                <h2 class="text-center font-up my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">My <strong>projects</strong></h2>
+
+                <!-- Section description -->
+                <p class="section-description wow fadeIn">More coming Soon</p>
+
+
+										<h5 class="feature-title font-up text-center">Dissertation Abstract</h5>
+										<p></p>
+										<p class="dark-grey-text">Amidst the various disputes and controversies in the history of Qumran scholarship, scholars have generally neglected the stylistic study of the poetic texts of the Dead Sea Scrolls. What studies do exist are saddled with outmoded metrical schemes and other systems of analysis created ad hoc for the study of biblical Hebrew poetry. These systems are shown to be incapable of adequately describing the stylistic innovations of post-biblical authors in general and poetic figuration that lies outside of traditional forms of parallelism in particular.
+This study approaches the stylistic study of the hymnic poetry of the Dead Sea Scrolls by installing a new methodology for the stylistic analysis that aims to be both cross-linguistically and diachronically applicable. This is accomplished by building upon the structuralist foundations of poetic analysis derived by Roman Jakobson and building upon that foundation with the system of rhetorical tropes designed by a group of Belgian scholars writing under the collective nom de plum Group µ. This system reorients poetic figuration along more linguistically precise criteria doing away with certain ambiguities that plagued earlier systems of Hebrew poetic analysis. This system of "metaboles" is applied to the hymn at the end of the Rule of the Community, the Thanksgiving Hymns, and the Songs of the Sabbath Sacrifice with particular emphasis on describing the nature of parallelism as a two-step process of combining two or more synecdoches in order to create either a metaphoric or metonymic relationship that comprises the whole parallel colonic group. This study also examines the structural features of parallelism and how it varies from biblical models to create new stylistic patterns. Furthermore, non-parallelistic stylistic features are contextualized within the same system of rhetorical tropes in order to comprise a comprehensive description of post-biblical poetic style within the range of continuity with canonical forms and innovative expressions.
+										</p>
+						</section>
+					</div>
+
+				<div class="container">
+					<section id="resume" class="section mb-5">
+						<h2 class="text-center font-up my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">View my <strong>Résumé</strong></h2>
+							<div class="text-center">
+								<i class="fa fa-user-circle-o fa-2x text-center"></i>
+								<a href="resume.pdf"><p>PDF</p></a>
+							</div>
+				 	</section>
+				</div>
+        <!-- Contact form -->
+        <div id="contact" class="container">
+
+            <!--Section: Contact v.2-->
+            <section class="section contact-section mt-4 mb-5">
+                <!--Section heading-->
+                <h2 class="text-center font-up my-5 pt-5 wow fadeIn" data-wow-delay="0.2s">Contact <strong>me</strong></h2>
+                <!--Section sescription
+                <p class="section-description mb-5 pb-4 wow fadeIn" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. </p>
+                <div class="row wow fadeIn" data-wow-delay="0.4s"> -->
+
+
+                    <div >
+                        <ul class="contact-icons">
+                            <li><i class="fa fa-map-marker fa-2x"></i>
+                                <p>Houston, TX 77055 USA</p>
+                            </li>
+												</ul>
+										</div>
+										<div >
+                        <ul class="contact-icons">
+													<li><i class="fa fa-phone fa-2x"></i>
+															<p>773-633-8821</p>
+                          </li>
+												</ul>
+										</div>
+										<div >
+                        <ul class="contact-icons">
+													<li><i class="fa fa-envelope fa-2x"></i>
+															<p>eric.jobe@gmail.com</p>
+                          </li>
+												</ul>
+										</div>
+
+            </section>
+            <!--/Section: Contact v.2-->
+
+        </div>
+        <!-- Contact form -->
+
+        <!-- Customers carousel -->
+
+        <div class="streak1">
+            <div class="flex-center">
+                <ul>
+                    <li><h2 class="h2-responsive mt-5 wow fadeIn">A tested analytical mind</h2></li>
+                    <li><h5 class="h5-responsive wow fadeIn" data-wow-delay="0.2s">For your company's greater value</h5></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- /.Customers carousel -->
+
     </main>
+    <!--/Main layout-->
 
-    <section class="background--skyBlue section">
-      <h2 class="color--cloud margin--none section__text--centered">
-        Portfolio
-      </h2>
-    </section>
-
-    <section class="section section--alignCentered section--description">
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving code"
-               class="section__exampleImage"
-               src="images/example1.png"/>
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
-
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving chemistry"
-               class="section__exampleImage"
-               src="images/example2.png"/>
-          <!-- “Chemistry” by Surian Soosay is licensed under CC BY 2.0
-               https://www.flickr.com/photos/ssoosay/4097410999 -->
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered ">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
-
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving cats"
-               class="section__exampleImage"
-               src="images/example3.png"/>
-          <!-- “Bengal cat” by roberto shabs is licensed under CC BY 2.0
-               https://www.flickr.com/photos/37287295@N00/2540855181 -->
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="background--skyBlue section">
-      <h2 class="color--cloud margin--none section__text--centered">
-        About Me
-      </h2>
-    </section>
-
-    <section class="section section--alignCentered section--description">
-      <p class="color--darkgrey section__description">
-        I am learning to code in the cloud! I like to work hard and learn new things.
-        I want to work for a company that will pay me to code in the cloud!
-      </p>
-
-    <div class="background--skyBlue modal--closed">
-      <span class="color--cloud modal__closeButton">
-        <i class="fa fa-window-close-o"></i>
-      </span>
-      <img alt="example screenshot of a project involving code"
-           class="modal__image"
-           src="images/example1.png"/>
-      <div class="color--cloud modal__text">
-        <h2 class="modal__title">
-          Work Example Name
-        </h2>
-        <a class="color--skyBlue modal__link"
-           href="#">
-          Check it out
-        </a>
-        <p class="modal__description">
-          A long description of the work in question.
-        </p>
-      </div>
+    <!-- Scrollspy -->
+    <div class="dotted-scrollspy clearfix d-none d-sm-block">
+        <ul class="nav smooth-scroll flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#works"><span></span></a></li>
+						<li class="nav-item"><a class="nav-link" href="#resume"><span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><span></span></a></li>
+        </ul>
     </div>
 
-  </body>
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        // initialize scrollspy
+        $('body').scrollspy({
+            target: '.dotted-scrollspy'
+        });
+
+        // initialize lightbox
+        $(function () {
+            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+
+        /* WOW.js init */
+        new WOW().init();
+
+    </script>
+
+</body>
 </html>
